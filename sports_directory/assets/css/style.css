@@ -1,0 +1,266 @@
+
+:root {
+    --primary: #193552;
+    --primary-light: #244d73;
+    --accent: #f3bd4f;
+    --page-bg: #f5f7fa;
+    --text-muted: #778496;
+    --border-color: #e9edf2;
+}
+
+body {
+    background: var(--page-bg);
+    color: #263445;
+    font-family: "Inter", "Segoe UI", Arial, sans-serif;
+    font-size: 15px;
+}
+
+.main-navbar {
+    background: #14744f;
+    padding: 10px 0;
+}
+
+.navbar-brand {
+    letter-spacing: -.4px;
+    font-size: 17px;
+}
+
+.navbar-logo {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    vertical-align: middle;
+}
+/* img{
+    width: 10px;
+    height: 20px;
+} */
+
+
+.navbar .nav-link {
+    color: #dce6f0;
+    padding: 10px 15px !important;
+}
+
+.navbar .nav-link:hover {
+    color: var(--accent);
+}
+.hero-section {
+    background: linear-gradient(120deg, #014121, #318238);
+    padding: 55px 35px;
+}
+
+.hero-section h1 {
+    letter-spacing: -1.5px;
+}
+
+.search-box {
+    max-width: 650px;
+}
+
+.search-box .form-control,
+.search-box .input-group-text {
+    padding: 15px;
+}
+
+.stat-card {
+    background: #fff;
+    border: 1px solid var(--border-color);
+    border-radius: 14px;
+    padding: 20px;
+    height: 100%;
+}
+
+.stat-card i {
+    font-size: 24px;
+    color: #3778ad;
+}
+
+.stat-card h3 {
+    font-weight: 750;
+    margin: 12px 0 3px;
+}
+
+.stat-card span {
+    font-size: 13px;
+    color: var(--text-muted);
+}
+
+.sport-card {
+    background: #fff;
+    border: 1px solid var(--border-color);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: .25s ease;
+}
+
+.sport-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(30, 50, 75, .09);
+}
+
+.sport-card-image {
+    height: 150px;
+    overflow: hidden;
+}
+
+.sport-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sport-placeholder {
+    height: 100%;
+    background: linear-gradient(120deg, #014121, #318238);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sport-placeholder i {
+    font-size: 50px;
+}
+
+.category-card {
+    background: white;
+    border: 1px solid var(--border-color);
+    padding: 22px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: .2s ease;
+}
+
+.category-card:hover {
+    border-color: #9dbbd6;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(30, 50, 75, .06);
+}
+
+.category-icon {
+    width: 52px;
+    height: 52px;
+    background: #edf4fa;
+    color: #28628e;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 23px;
+}
+
+.sport-banner {
+    background: linear-gradient(120deg, #193552, #315e82);
+    color: white;
+    padding: 35px;
+    border-radius: 17px;
+}
+
+.profile-header {
+    background: linear-gradient(120deg, #193552, #315e82);
+    padding: 35px;
+}
+
+.profile-photo {
+    width: 145px;
+    height: 145px;
+    border-radius: 18px;
+    object-fit: cover;
+    border: 4px solid rgba(255,255,255,.7);
+}
+
+.table-avatar {
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: #edf1f5;
+}
+
+.table > :not(caption) > * > * {
+    padding: 14px 12px;
+}
+
+.table thead th {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: .4px;
+    color: #6b7889;
+    white-space: nowrap;
+}
+
+.card {
+    border: 1px solid var(--border-color) !important;
+}
+
+.breadcrumb {
+    font-size: 13px;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+}
+
+.timeline-item {
+    border-left: 3px solid #d8e4ef;
+    padding-left: 18px;
+}
+
+.site-footer {
+    background: #fff;
+    border-top: 1px solid var(--border-color);
+}
+
+.form-control,
+.form-select {
+    padding: 11px 13px;
+    border-color: #dfe5ec;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #6e9bc0;
+    box-shadow: 0 0 0 .2rem rgba(55,120,173,.12);
+}
+
+.btn-primary {
+    background: linear-gradient(120deg, #014121, #318238);
+    border-color: var(--primary);
+}
+
+.btn-primary:hover {
+    background: linear-gradient(120deg, #02351b, #2fc93b);
+    border-color: var(--primary-light);
+}
+
+@media (max-width: 767px) {
+    .hero-section {
+        padding: 30px 20px;
+    }
+
+    .hero-section h1 {
+        font-size: 32px;
+    }
+
+    .profile-header {
+        padding: 22px;
+    }
+
+    .profile-photo {
+        width: 105px;
+        height: 105px;
+    }
+
+    .category-card {
+        padding: 15px;
+    }
+
+    .sport-card-image {
+        height: 130px;
+    }
+
+}
